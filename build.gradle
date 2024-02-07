@@ -1,0 +1,16 @@
+plugins {
+    id 'war'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api
+    providedCompile 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+}
+
+war {
+    webAppDirectory = file('src/main/webapp')
+}
